@@ -2,21 +2,26 @@
 
 ## Introduction
 
-This is written in java and is a basic version of a web crawler. It prints the pages that it finds to the System.out.
-It starts on a given %startingUrl% then iterates around the page finding links and following links if they are still within the
-same domain.
+    This is written in java and is a basic version of a web crawler. It prints the pages that it finds to the System.out.
+    It starts on a given %startingUrl% then iterates around the page finding links and following links if they are still within the
+    same domain.
 
 ## Useage
 
-Run the Application class, passing in 2 attributes:-
+    Run the following:-
 
-Application %startingUrl% %maxDepth%
+    mvn clean package shade:shade
 
-where
+    This will create an executable jar file.
 
-%startingUrl% = the home page to start web crawler
-%maxDepth% = No of levels to follow links down to, default is 3. This was added as it does take some time to execute.
+    Then run the following:-
 
+    java -jar target/web-crawler-1.0.0-SNAPSHOT.jar %startingUrl% %maxDepth%
+
+    where
+
+    %startingUrl% = the home page to start web crawler
+    %maxDepth% = Optionally, the no of levels to follow links down to, default is 3. This was added as it can take some time to execute.
 
 ## Improvements that could be made
 

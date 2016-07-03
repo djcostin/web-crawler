@@ -10,7 +10,7 @@ public class Application {
 
         int maxDepth=3;
 
-        if (args[1] != null) {
+        if (args.length>1) {
             try {
                 maxDepth = Integer.parseInt(args[1]);
             }
