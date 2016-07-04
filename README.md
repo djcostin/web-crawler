@@ -32,4 +32,7 @@
     be quite easy to make some more user friendly output.
 
     Improve the classification of the pages, currently there is only images / pages and external links. This should also be built out to
-    capture javascript / css files
+    capture javascript / css files.
+
+    I deliberately tried to keep it simple by not using any other libraries (apart from logging and testing), but using Jsoup could be an option
+    worth investigating
